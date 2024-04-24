@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game of Life</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+  <!--
+    Eu fiz uma pequena interface basica para que eu conseguisse visualizar
+    uma solução mais clara, diminuindo a perda de tempo, para isso, usei
+    o excalidraw, você pode visualizar meu esboço nesse link a seguir:
+    https://excalidraw.com/#json=QLFVb2iVsR4EwmOrraSly,DlW6upa07QvksoGfu-91aQ
+  -->
+<body>
+  <!-- Cabeçalho de apresentação -->
+  <header class="header-container">
+    <h1>Game Of Life - Test internship / Hiago da Silva Borgaço</h1>
+  </header>
+  <!-- Conteúdo principal da pagina, onde o usuário escolhe o numero de colunas e linhas   -->
+  <main class="main-container">
+    <section>  
+
+      <div class="ui-container">
+
+        <div class="input-container">
+
+          <div class="input">
+
+            <label for="cols">cols</label>
+            <input type="number" name="cols" id="cols" required minlength="1" min="1">
+
+          </div>
+          <div class="input">
+
+            <label for="rows">rows</label>
+            <input type="number" name="rows" id="rows" required minlength="1" min="1">
+
+          </div>
+
+          <button>Generate</button>
+
+        </div>
+
+        <button>Clear</button>
+
+      </div>
+
+      <div id="gridContainer" class="grid-container">
+  
+      </div>
+
+    </section>
+  </main>
+  <script src="./scripts/gridHelpers.js" type="module"></script>
+  <script src="./scripts/gameOfLife.js" type="module"></script>
+</body>
+</html>
