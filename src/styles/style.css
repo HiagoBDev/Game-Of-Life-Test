@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --green-color: #4ad664;
+  --blue-color: #228be6;
+}
+
+input:focus{
+  outline: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Inter", sans-serif;
+  background-color: #33383D;
+  color: white;
+}
+
+.grid-container{
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--green-color);
+
+}
+
+.header-container{
+  display: flex;
+  padding: 2em;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid var(--green-color);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.253)
+}
+.main-container{
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grid-container{
+  border-radius: 4px;
+}
+.main-container section{
+  width: 80%; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.input-container{
+  display: flex;
+  gap: 1.8em;
+  align-items: center;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 	20px 20px 20px 20px;
+  
+}
+.input input{
+  width: 5em;
+  background-color: transparent;
+  padding: 3px;
+  border-radius: 4px;
+  border: 2px solid var(--green-color);
+  color: white;
+  padding-left: 10px;
+}
+.ui-container{
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  width: 100%;
+}
+.ui-container button{
+  height: 2em;
+  width: 6em;
+  padding: 3px;
+  background-color: transparent;
+  border-radius: 4px;
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+  cursor: pointer;
+  font-size: large;
+  font-weight: 500;
+  border: 2px solid;
+  transition: transform 0.2s ease;
+}
+.ui-container button:hover {
+  transform: scale(1.1);
+}
+
