@@ -1,75 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 :root {
   --green-color: #4ad664;
   --blue-color: #228be6;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Inter", sans-serif;
-  background-color: #33383D;
+  background-color: #33383d;
   color: white;
 }
 
-.grid-container{
+.board-container {
   height: 100%;
   width: 100%;
   border: 1px solid var(--green-color);
-
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 2px 3px 1px rgba(255, 255, 255, 0.253);
 }
 
-.header-container{
+.header-container {
   display: flex;
   padding: 2em;
   align-items: center;
   justify-content: center;
   border-bottom: 2px solid var(--green-color);
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.253)
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.253);
+  
 }
-.main-container{
-
+.main-container {
+  margin-top: 3em;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 3em;
 }
-.grid-container{
-  border-radius: 4px;
-}
-.main-container section{
-  width: 80%; 
+
+.main-container section {
+  width: 80%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
-.input-container{
+.input-container {
   display: flex;
   gap: 1.8em;
   align-items: center;
 }
-.input{
+.input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 	20px 20px 20px 20px;
-  
+  padding: 20px 20px 20px 20px;
 }
-.input input{
+.input input {
   width: 5em;
   background-color: transparent;
   padding: 3px;
@@ -78,13 +80,13 @@ body{
   color: white;
   padding-left: 10px;
 }
-.ui-container{
+.ui-container {
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-.ui-container button{
+.ui-container button {
   height: 2em;
   width: 6em;
   padding: 3px;
@@ -101,4 +103,3 @@ body{
 .ui-container button:hover {
   transform: scale(1.1);
 }
-
