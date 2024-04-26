@@ -36,7 +36,7 @@ $ npm install -g jest
 $ npm test
 
 ```
-### Autor
+### Author
 ---
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/102269033?v=4" width="200px;" alt="Hiago Borgaço picture"/>
  <br />
