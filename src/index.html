@@ -7,52 +7,40 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
   <!--
-    Eu fiz uma pequena interface basica para que eu conseguisse visualizar
-    uma solução mais clara, diminuindo a perda de tempo, para isso, usei
-    o excalidraw, você pode visualizar meu esboço nesse link a seguir:
+    I created a basic interface so that I could visualize a clearer solution,
+    reducing the loss of time. For this purpose, I used Excalidraw. 
+    You can view my sketch at the following link:
     https://excalidraw.com/#json=QLFVb2iVsR4EwmOrraSly,DlW6upa07QvksoGfu-91aQ
   -->
 <body>
-  <!-- Cabeçalho de apresentação -->
+  <!-- Presentation Header -->
   <header class="header-container">
     <h1>Game Of Life - Test internship / Hiago da Silva Borgaço</h1>
   </header>
-  <!-- Conteúdo principal da pagina, onde o usuário escolhe o numero de colunas e linhas   -->
+  <!-- Main Content of the Page, where the user selects the number of columns and rows. -->
   <main class="main-container">
-    <section>  
-
+    <section> 
       <div class="ui-container">
-
-        <div class="input-container">
-
+        <form class="input-container">
           <div class="input">
-
             <label for="cols">cols</label>
-            <input type="number" name="cols" id="cols" required minlength="1" min="1">
-
+            <input type="number" name="cols" id="cols" required minlength="1" min="1" maxlength="121" max="121" value="50">
           </div>
           <div class="input">
-
             <label for="rows">rows</label>
-            <input type="number" name="rows" id="rows" required minlength="1" min="1">
-
+            <input type="number" name="rows" id="rows" required minlength="1" min="1" maxlength="70" max="70" value="50">
           </div>
-
-          <button>Generate</button>
-
-        </div>
-
-        <button>Clear</button>
-
+          <button onclick="handleSubmit(event)">Generate</button>
+        </form>
+        <button id="clearButton">Clear</button>
       </div>
-
-      <div id="gridContainer" class="grid-container">
-  
+  <!-- Where the Game of Life actually happens. -->
+      <div id="gridContainer" class="board-container">  
+        <canvas id="canvas"></canvas>
       </div>
-
     </section>
   </main>
-  <script src="./scripts/gridHelpers.js" type="module"></script>
-  <script src="./scripts/gameOfLife.js" type="module"></script>
+
+  <script src="./scripts/gameOfLife.js"></script>
 </body>
 </html>
