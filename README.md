@@ -1,3 +1,4 @@
+<h1 align="center">Test internship / Hiago Borgaço</h1>
 <h1 align="center">Game of Life</h1>
 <p align="center">a technical test for an internship that consists of developing the Game Of Life, created by John Conway in 1970.</p>
 <h1 align="center">HTML, CSS, JS and JEST</h1>
@@ -23,14 +24,28 @@ $ git clone https://github.com/HiagoBDev/Game-Of-Life-Test
 $ npm install
 $ npm install -g jest
 # This will give you the dependency you need to run the tests.
+
+
+# to run the project you can use the extension in vscode called ''live server''
+# you download the extension, open the html file, press right button and find and click the option ''open with live server''
+
+# Run this to run the test
+$ npm test
+
+```
+### How to run the project
+
+- To run the project, you can use the VS Code extension called "Live Server"
+- Download the extension, open the HTML file, right-click, and find and click the "Open with Live Server" option.
+- If you prefer not to download the extension, you can simply navigate to the project folder, open the "src" folder, and double-click the index.html file in your preferred browser.
+
+### Testing a few functions
+```bash
 # Now, I kindly ask that when running the tests, please comment out
 # the functions that manipulate the DOM in the JavaScript file.
 # Unfortunately, I don't know how to set up the testing environment in a way
 # that these functions don't interfere with the testing process.
 # also put 'export before the function'.
-
-# to run the project you can use the extension in vscode called ''live server''
-# you download the extension, open the html file, press right button and find and click the option ''open with live server''
 
 # Run this to run the test
 $ npm test
