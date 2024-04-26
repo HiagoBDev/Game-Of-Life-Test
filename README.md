@@ -33,3 +33,12 @@ $ npm install -g jest
 $ npm test
 
 ```
+### Autor
+---
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/102269033?v=4" width="200px;" alt="Hiago Borgaço picture"/>
+ <br />
+
+Done by Hiago Borgaço 👋🏽 Feel free to reach out!
+
+[![Linkedin Badge](https://img.shields.io/badge/-Hiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/hiago-borga%C3%A7o/)](https://www.linkedin.com/in/hiago-borga%C3%A7o/)
+[![Gmail Badge](https://img.shields.io/badge/-hiagoborgaco1@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:hiagoborgaco1@gmail.com)](mailto:hiagoborgaco1@gmail.com)
