@@ -24,14 +24,6 @@ $ git clone https://github.com/HiagoBDev/Game-Of-Life-Test
 $ npm install
 $ npm install -g jest
 # This will give you the dependency you need to run the tests.
-
-
-# to run the project you can use the extension in vscode called ''live server''
-# you download the extension, open the html file, press right button and find and click the option ''open with live server''
-
-# Run this to run the test
-$ npm test
-
 ```
 ### How to run the project
 
