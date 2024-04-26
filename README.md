@@ -29,6 +29,9 @@ $ npm install -g jest
 # that these functions don't interfere with the testing process.
 # also put 'export before the function'.
 
+# to run the project you can use the extension in vscode called ''live server''
+# you download the extension, open the html file, press right button and find and click the option ''open with live server''
+
 # Run this to run the test
 $ npm test
 
